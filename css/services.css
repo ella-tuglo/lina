@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.container{
+  max-width: 1320px;
+}
+
+section{
+  overflow: hidden;
+}
+.section-bg{
+  background: #d86608;
+}
+
+.section-header h3{
+  font-size: 36px;
+  color:chartreuse;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: 'poppins',san-serif;
+
+}
+.section-header p{
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #000;
+  width: 50%;
+}
+
+
+#services{
+  padding: 60px 0 40px 0;
+}
+
+
+#services .box{
+padding: 30px;
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+margin:0 10px 40px 10px;
+background: rgb(187, 18, 136);
+box-shadow:0 10px 29px 0 burlywood;
+transition: all 0.3s ease-in-out;
+text-align: center;
+}

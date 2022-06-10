@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root{
+  --color-primary:#F7D716;
+  --secondary-color:#ff06B7;
+  --color-tertiary:#455D67;
+  --color-light:#BDF2D5;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family: "Poppins", sans-serif;
+background: url("https://images.unsplash.com/photo-1654783912259-659d94fff000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+
+
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+color: var(--color-light);
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.container{
+  width: 86%;
+  margin: 0 auto;
+}
+
+nav .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding:1.5rem 0;
+}
+
+nav .container img{
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  
+}
+nav .container ul{
+  display: flex;
+  gap: 4rem;
+}
+nav .container ul li{
+  list-style: none;
+  
+}
+
+a{
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+
+section{
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  top: 3rem;
+  left: 0;
+  text-align: center;
+  color: green;
+}
+
+section .container h1{
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+  color: #ececde;
+}
+
+section .container h3{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-family: "Lobster", cursive;
+  color: whitesmoke;
+}
+
+nav .container ul li a{
+
+  margin-left: 3rem;
+  text-decoration: none;
+  color: #14a966;
+  font-size: 20px;
+}
+
+nav .container ul li a:hover{
+background: #4e0a2e;
+color: #F7D716;
+}
+
+img{
+  margin-right: 30rem;
+}
+
+section .container a{
+  display: inline-block;
+  color: rgb(179, 208, 34);
+  border-radius: 5px;
+  margin-top: 3rem;
+  
+}
+section .container a:hover{
+  background: #40DFEf;
+  color: whitesmoke;
+}
+
+section .container a{
+  background: linear-gradient(
+    to rigth,
+    var(--secondary-color)
+    var(--color-primary)
+  );
+
+  padding: 0.7rem 3rem;
+  margin: 0.4rem;
+  border-radius: 2rem;
+  position: relative;
+  transition: all 500ms ease-in-out;
+
+
+}
+section .container a:hover{
+  background: linear-gradient(
+    to left,
+    var(--secondary-color)
+    var( --color-primary)
+  );
+}
+section .container a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  border-left: 5px solid var(--color-primary);
+  z-index: 0;
+  transition: all 300ms ease-in-out
+}
+
+
